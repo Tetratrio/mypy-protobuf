@@ -13,5 +13,4 @@ setup(
     download_url="https://github.com/dropbox/mypy-protobuf/archive/v1.23.tar.gz",
     install_requires=["protobuf>=3.6.0"],
     entry_points={"console_scripts": ["protoc-gen-mypy = mypy_protobuf:main"]},
-    scripts=["protoc_gen_mypy.bat"],
 )

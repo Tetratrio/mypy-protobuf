@@ -234,12 +234,11 @@ class PkgWriter(object):
 
             l("{}: {}", enum.name, "_" + enum.name)
             l(
-                "class {}({}[{}]):",
+                "class {}({}):",
                 "_" + enum.name,
                 self._import(
                     "google.protobuf.internal.enum_type_wrapper", "EnumTypeWrapper"
-                ),
-                enum_value_full_type,
+                )
             )
             with self._indent():
                 l(
